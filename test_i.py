@@ -2,7 +2,7 @@ import pyvisa
 import time
 
 # あなたの 6221 の GPIB アドレスに書き換えてください
-ADDR_6221 = "GPIB0::12::INSTR"
+ADDR_6221 = "GPIB0::18::INSTR"
 
 # 設定したい電流値 [A]
 TARGET_CURRENT = 1e-6   # 1 µA
@@ -34,7 +34,7 @@ try:
     print(f"電流を {TARGET_CURRENT} A に設定しました")
 
     # 1秒だけ待つ（装置の動作確認用）
-    time.sleep(1)
+    time.sleep(10)
 
     # 出力 OFF（安全のため）
     src.write(":OUTP OFF")
