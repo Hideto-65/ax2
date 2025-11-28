@@ -1,7 +1,7 @@
 import pyvisa
 
 # あなたの 2110 の USB アドレスに置き換えてください
-ADDR_2110 = "USB0::0x05E6::2110::1234567::INSTR"
+ADDR_2110 = "USB0::0x05E6::0x2110::1408023::INSTR"
 
 rm = pyvisa.ResourceManager()
 
